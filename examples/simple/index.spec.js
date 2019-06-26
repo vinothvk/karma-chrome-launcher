@@ -1,8 +1,13 @@
 /* eslint-env mocha */
-const expect = require('chai').expect;
 
-describe('ChromeLauncher', function () {
-  it('works', function () {
-    expect(1 + 1).to.be.eql(2);
-  });
+describe('main', function () {
+    describe('#endsWith()', function () {
+        it('should return true when the value ends with the suffix', function () {
+            assert.equal(true, endsWith("abcd", "cd"));
+        });
+
+        it('should return false when the value does not end with the suffix', function () {
+            assert.equal(false, endsWith("abcd", "cde"));
+        });
+    });
 });
