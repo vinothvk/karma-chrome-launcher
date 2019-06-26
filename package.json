@@ -7,7 +7,7 @@
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "grunt test",
-    "karmatest": "karma run examples/simple/karma.conf.js"
+    "karmatest": "karma start examples/simple/karma.conf.js"
   },
   "repository": {
     "type": "git",
