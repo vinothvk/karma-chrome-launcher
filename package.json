@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "standard",
     "pretest": "npm run lint",
-    "test": "grunt test"
+    "test": "grunt test",
+    "karmatest": "karma run examples/simple/karma.conf.js"
   },
   "repository": {
     "type": "git",
