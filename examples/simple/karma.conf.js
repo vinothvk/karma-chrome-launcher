@@ -8,7 +8,7 @@ module.exports = function (config) {
     frameworks: ['mocha'],
 
     files: [
-      'examples/simple/*.js'
+      '*.js'
     ],
 
     exclude: [],
