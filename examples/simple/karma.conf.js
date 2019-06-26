@@ -20,13 +20,22 @@ module.exports = function (config) {
 
     autoWatch: false,
 
-    browsers: ['ChromeHeadless'],
+    browsers: ['CustomChrome'],
 
     singleRun: false,
 
     plugins: [
       require('../../'),
       'karma-mocha'
-    ]
+    ],
+    
+    customLaunchers: {
+      CustomChrome: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--no-sandbox',
+        ],
+      },
+    },
   })
 }
